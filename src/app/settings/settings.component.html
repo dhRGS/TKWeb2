@@ -1,0 +1,23 @@
+<h1>
+ <i class="fa fa-sliders fa-2x"></i> Settings
+</h1>
+<hr>
+<div class="row">
+  <div class="form-horizontal">
+    <div class="form-group">
+      <label for="allowNewPanel"><input type="checkbox" name="allowNewPanel" [checked]="newPanelAllowed"> Allow New Panel</label>
+    </div>
+    <fieldset name="newPanelForm">
+    <div class="form-group">
+      <label for="newPanelTitle">Panel Title:</label>
+      <input type="text" 
+      name="newPanelTitle"
+      class="form-control"
+      (input)="onUpdatePanelTitle($event)">
+    </div>
+    <button
+    class="btn btn-primary"
+    (click)="onCreatePanel">Add Panel </button>
+  </fieldset>
+  </div>
+</div>

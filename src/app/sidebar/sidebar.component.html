@@ -1,0 +1,16 @@
+<div class="sidebar"
+[ngClass]="{'closed': !isOpen}"
+#sidebarRight>
+<div class="container-fluid">
+    <h3>
+        sidebar works!
+        <span class="pull-right">
+          <a type="button"
+          (click)="toggleSidebar()">
+              <i class="glyphicon glyphicon-menu-hamburger"></i>
+          </a>
+        </span>
+    </h3>
+    <app-sidebar-page></app-sidebar-page>
+</div>
+</div>
